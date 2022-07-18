@@ -6,6 +6,13 @@ course which is part of the ‘IBM Data Science Professional Certificate’ by I
 Dataset was prepared by IBM, preliminary data exploration, visualization and preparation steps are based in part on notebook provided
 for the course participants and created by Saeed Aghabozorgi, PhD. <br> 
 
+Classifier used in the project:
+-	K Nearest Neighbor (KNN),
+-	Decision Tree,
+-	Random Forest (not covered in course exercise),
+-	Support Vector Machine,
+-	Logistic Regression.
+
 
 This project contains the following modifications:
 - since wget is not available natively on Windows we implemented file download with the urllib.request module,
@@ -15,5 +22,6 @@ This project contains the following modifications:
     - use of class_weight feature implemented in all but KNN classifiers to find best algorithm,
     - use resampling method,
     - use of SMOTE (Synthetic Minority Oversampling Technique) from imblearn, <br>
-- because main goal of the model is to identify clients that are most likely to defaults on their debt, we choose the F1 score as to score models inside GridSearchCV. Use of the recall leads to the models for which all predictions belong to the majority class.
+- because main goal of the model is to identify clients that are most likely to defaults on their debt, we choose the F1 score as to score models inside GridSearchCV. Use of the recall leads to the models for which all predictions belong to the majority class,
+- we also trained Random Forest classifier.
  
